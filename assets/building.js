@@ -4,7 +4,7 @@ class Building {
         this.type = object.type;
 
         // function for being able to create the building
-        this.create = function(BuildingLocation){
+        this.build = function(BuildingLocation){
             $('#' + BuildingLocation).html(this.name);
         }
     }    

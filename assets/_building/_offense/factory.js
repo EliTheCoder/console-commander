@@ -1,9 +1,8 @@
 class Factory extends Building {    
     constructor(){    
-        let ThisFactory = {
+        super({
             name: 'factory',
             type: 'offense'
-        }
-        super(ThisFactory);
+        });
     }
 }
