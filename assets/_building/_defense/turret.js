@@ -1,9 +1,8 @@
 class Turret extends Building { 
     constructor(){
-        let ThisTurret = {
+        super({
             name: 'turret',
             type: 'defense'
-        }
-        super(ThisTurret);
+        });
     }
 }

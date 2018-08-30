@@ -1,9 +1,8 @@
 class Mine extends Building { 
     constructor(){
-        let ThisMine = {
+        super({
             name: 'mine',
             type: 'resource'
-        }
-        super(ThisMine);
+        });
     }
 }

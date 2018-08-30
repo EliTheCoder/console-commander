@@ -1,5 +1,8 @@
 class Plane extends Unit {
     constructor(){
-        super('plane', 'airpad');
+        super({
+            name: 'plane',
+            building: 'airpad'
+        });
     }
 }

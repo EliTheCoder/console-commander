@@ -1,9 +1,8 @@
 class Airpad extends Building {
     constructor(){
-        let ThisAirPad = {
+        super({
             name: 'airpad',
-            type: 'offense',
-        }
-        super(ThisAirPad);
+            type: 'offense'
+        });
     }
 }
