@@ -5,7 +5,7 @@ class Building {
 
         // function for being able to create the building
         this.create = function(BuildingLocation){
-            $('.' + BuildingLocation).html(this.name);
+            $('#' + BuildingLocation).html(this.name);
         }
     }    
 }
