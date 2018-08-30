@@ -1,0 +1,20 @@
+{
+  "name": "Console Commander",
+  "version": "0.0.1",
+  "description": "A JavaScript console utilizing base builder game",
+  "author": "Lillam, EliTheCoder <ex.games.org@gmail.com>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EliTheCoder/console-commander.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.0.4",
+    "path": "*",
+    "util": "*"
+  }
+}
