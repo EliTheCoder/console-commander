@@ -1,5 +1,5 @@
 function setup() {
-    Map(6);
+    Map(3);
 }
 
 function draw() {
