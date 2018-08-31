@@ -1,7 +1,5 @@
 function setup() {
-
-    // prepare our map ((need to implement this with p5 canvas shite))
-    Map('8');
+    Map(6);
 }
 
 function draw() {
