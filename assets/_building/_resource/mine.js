@@ -7,24 +7,28 @@ class Mine extends Building
             type: 'resource'
         });
 
-        this.money = 0;
+        // User oriented Money lot.
+        let Money = 0;
 
-        // Function for the mine to start collecting; when a mine is built this gets instantly ran.
-        // (only time a user should have access to this is when the mine is on field)
+        // Function for building specific money racking.
         this.startCollecting = function()
         {
-            // this is specifically for collecting money...
             setInterval(function()
             {
                 // Append money to the variable.
-                this.money += 50; // this is out of scope, returning NaN.
-                console.log(this.money);
+                Money += 50; // this is out of scope, returning NaN.
+                // console.log(Money);
             }, 1000);
         }
 
+        // Collecitng the users money || This will allow a user to
+        // have a set amount of money for their buildings... each building will have a cost.
         this.collect = function()
         {
-            $('.money').html(this.money);
+            let CurrentMoney = $('.money').val();
+            let DisplayMoney = CurrentMoney + Money;
+            $('.money').html(DisplayMoney);
+            Money = 0;
         }
     }
 }
