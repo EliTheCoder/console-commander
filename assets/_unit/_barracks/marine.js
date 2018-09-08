@@ -1,5 +1,7 @@
-class Marine extends Building {
-    constructor(){
+class Marine extends Building
+{
+    constructor()
+    {
         super({
             name: 'marine',
             building: 'barracks'

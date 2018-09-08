@@ -1,5 +1,7 @@
-class Tank extends Unit {
-    constructor(){
+class Tank extends Unit
+{
+    constructor()
+    {
         super({
             name: 'tank',
             building: 'factory'

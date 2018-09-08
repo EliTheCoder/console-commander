@@ -1,5 +1,7 @@
-class Airpad extends Building {
-    constructor(){
+class Airpad extends Building
+{
+    constructor()
+    {
         super({
             name: 'airpad',
             type: 'offense'

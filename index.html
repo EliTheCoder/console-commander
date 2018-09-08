@@ -36,10 +36,18 @@
             .player3 { background-color: rgba(0, 255, 0, 0.1); }
             .player4 { background-color: rgba(255, 255, 0, 0.1); }
             /* Styles of the buildings */
-            .factory { display: block; width: 20px; height: 20px; background-color: #181818; margin: 0 auto; }
+            .factory { display: block; width: 20px; height: 20px; background-color: #181818; margin: 0 auto; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; }
         </style>
     </head>
     <body>
-        
+        <div class="player-resources" style="display: block; width: 500px; margin: 10px auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Money: <span class="money">0</span></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
     </body>
 </html>

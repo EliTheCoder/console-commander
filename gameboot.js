@@ -1,8 +1,12 @@
-function setup() {
+// Setting up the game
+function setup()
+{
     Map(3);
 }
 
-function draw() {
+// drawing the game.
+function draw()
+{
     
 }
 

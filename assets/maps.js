@@ -1,5 +1,10 @@
-function Map(map){
-    switch(map){
+function Map(map)
+{
+    var html = '';
+    var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+
+    switch(map)
+    {
         case 1:
             var ThisMap = [
                 [2, 2, 1, 1, 1, 3, 3],
@@ -90,19 +95,19 @@ function Map(map){
         break;
     }
 
-    var html = '';
-    var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
     html += '<table style="display: block; margin: auto auto; max-width: 500px; background-color: #f1f1f1; border: solid 2px rgba(0,0,0,0.5);">';
         html += '<tbody style="display: block; width: 100%;">';
-            for(row = 0; row < ThisMap.length; row++){
+            for(row = 0; row < ThisMap.length; row++)
+            {
                 html += '<tr style="display: block; width: 100%;">';
-                    for(column = 0; column < ThisMap[row].length; column++){
+                    for(column = 0; column < ThisMap[row].length; column++)
+                    {
                         html += '<td id="' + alphabet[row] + (column + 1) + '" ' +
-                            ((ThisMap[row][column] == 0) ? 'class="impassible"' : '')  +
-                            ((ThisMap[row][column] == 2) ? 'class="player1"' : '') +
-                            ((ThisMap[row][column] == 3) ? 'class="player2"' : '') +
-                            ((ThisMap[row][column] == 4) ? 'class="player3"' : '') +
-                            ((ThisMap[row][column] == 5) ? 'class="player4"' : '') + ' style="width: 72px; text-align: center; padding: 10px; border: solid 1px black;">' + alphabet[row] + (column + 1) + '</td>';
+                        ((ThisMap[row][column] == 0) ? 'class="impassible"' : '')  +
+                        ((ThisMap[row][column] == 2) ? 'class="player1"' : '') +
+                        ((ThisMap[row][column] == 3) ? 'class="player2"' : '') +
+                        ((ThisMap[row][column] == 4) ? 'class="player3"' : '') +
+                        ((ThisMap[row][column] == 5) ? 'class="player4"' : '') + ' style="width: 72px; text-align: center; padding: 10px; border: solid 1px black;">' + alphabet[row] + (column + 1) + '</td>';
                     }
                 html += '</tr>';
             }
